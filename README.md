@@ -42,19 +42,21 @@ pip install -r requirements.txt
 #### На серверном компьютере:
 
 ```bash
-uvicorn server:app --reload
+uvicorn server:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### 5. Указать IP сервера
+#### Укажи свой IP
 ```python
-uvicorn server:app --reload
+uri = "ws://127.0.0.1:8000/ws"  # server IP
 ```
 
-### 5. Подключить клиентов
+### 6. Подключить клиентов
 
-#### На клиентском компьютере (или на том же, где сервер)::
+#### На клиентском компьютере:
 
 ```bash
 python client.py
 ```
+
 
