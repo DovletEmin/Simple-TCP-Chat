@@ -42,7 +42,12 @@ pip install -r requirements.txt
 #### На серверном компьютере:
 
 ```bash
-python server.py
+uvicorn server:app --reload
+```
+
+### 5. Указать IP сервера
+```python
+uvicorn server:app --reload
 ```
 
 ### 5. Подключить клиентов
@@ -52,3 +57,4 @@ python server.py
 ```bash
 python client.py
 ```
+
