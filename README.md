@@ -46,7 +46,7 @@ uvicorn server:app --reload --host 0.0.0.0 --port 8000
 ```
 
 ### 5. Указать IP сервера
-#### Поменяй IP в этой строке в  в "client.py" на IP сервера
+#### Поменяй IP в этой строке в "client.py" на IP сервера
 ```python
 uri = "ws://127.0.0.1:8000/ws"  # server IP
 ```
@@ -58,6 +58,7 @@ uri = "ws://127.0.0.1:8000/ws"  # server IP
 ```bash
 python client.py
 ```
+
 
 
 
